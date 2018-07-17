@@ -1,0 +1,17 @@
+{% extends "layout.twig" %} {% block content %} {% for blogPost in blogPosts %} {% set strategy = 'html' %}
+
+
+<div class="blog-post">
+    <h2>{{ blogPost.title | striptags('<strong>')| raw }} </h2>
+    <p>Jan 1, 2020 by <a href="">Alex</a></p>
+    {% if blogPost.img_url %}
+        <div class="blog-post-image">
+            <img class="img-fluid" src="{{ blogPost.img_url }}" alt="">
+        </div>
+    {% endif %}    
+        <div class="blog-post-content">
+            <p>{{blogPost.content }}
+        </p>
+    </div>
+</div>
+{% endfor %} {% endblock %}

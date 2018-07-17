@@ -1,0 +1,17 @@
+{% extends "layout.twig" %} {% block content %} {% if errors %} {% include('partials/errors.twig') %} {% endif %}
+
+<h2>Login</h2>
+<form method="post">
+    <div class="form-group">
+        <label for="inpuntEmail">Email</label>
+        <input type="text" class="form-control" name="email" id="inputEmail" />
+    </div>
+    <div class="form-group">
+        <label for="inpuntPassword">Password</label>
+        <input type="password" class="form-control" name="password" id="inputPassword" />
+    </div>
+    <div class="form-group">
+
+        <input type="submit" class="btn btn-primary" value="Login" />
+    </div>
+</form> {% endblock %}
