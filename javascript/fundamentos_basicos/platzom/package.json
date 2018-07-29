@@ -2,7 +2,7 @@
   "name": "platzom",
   "version": "0.1.0",
   "description": "Traductor de idioma platzom",
-  "main": "index.js",
+  "main": "dist/src/platzom.js",
   "scripts": {
     "build": "babel src/platzom.js -d dist"
   },
