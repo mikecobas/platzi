@@ -46,9 +46,5 @@ export default function platzom(str) {
     return translation
   }
   
-  console.log(platzom("Programar")) // Program
-  console.log(platzom("Zorro")) // Zorrope
-  console.log(platzom("Zarpar")) // Zarppe
-  console.log(platzom("abecedario")) // abece-dario
-  console.log(platzom("sometemos")) // SoMeTeMoS
+
   
