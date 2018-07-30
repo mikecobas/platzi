@@ -4,7 +4,8 @@
   "description": "Traductor de idioma platzom",
   "main": "dist/src/platzom.js",
   "scripts": {
-    "build": "babel src/platzom.js -d dist"
+    "build": "babel src/platzom.js -d dist",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
