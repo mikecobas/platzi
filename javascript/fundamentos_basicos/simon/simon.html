@@ -93,16 +93,15 @@
                     swal({
                         title: 'Perdiste :(',
                         icon: 'error',
-                        text: `Has pulsado ${String.fromCharCode(
-                          key
-                        ).toUpperCase()} y debias pulsar ${String.fromCharCode(
-                          keys[i]
-                        )}\n¿Quieres intentarlo de nuevo?`,
-                        buttons: ['No', 'Si']
+                        text: `¿Quieres intentarlo de nuevo?`,
+                        buttons: {
+                            cancel: 'NO',
+                            confirm: 'SI',
+                        }
                       }).then(ok => {
                         if (ok) {
-                          levelbox.classList.add('active')
-                          keyboard.className = 'keyboard'
+                            teclas = generarTeclas(niveles)
+                            siguienteNivel(0)
                         }else {
                           swal('¡Gracias por jugar!');
                         }
