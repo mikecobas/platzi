@@ -1,12 +1,12 @@
 import React from  'react';
 import ReactDom from 'react-dom';
 
-
-const container = document.getElementById('app');
 //ReactDom.render(que voy a renderizar, donde lo hare);
+const container = document.getElementById('app');
 
-const holaMundo = <h1>HOLA MUNDO </h1>;
 
-ReactDom.render(holaMundo, app);
+const holaMundo = <h1>HOLA MUNDO!!</h1>;
 
-//console.log('Hola Mundo!')
+ReactDom.render(holaMundo, container);
+
+//console.log('Hola Mundo!')  
