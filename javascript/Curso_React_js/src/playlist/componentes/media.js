@@ -7,15 +7,15 @@ class Media extends Component {
        
         return (
             <div className="Media">
-                <div>
-                    <img 
+                <div className="Media-cover">
+                    <img className="Media-image"
                         src="./images/covers/bitcoin.jpg"
                         alt=""
                         width={260}
                         height={160}
                         />
-                        <h3> ¿POR QUÉ APRENDER REACT?</h3>
-                        <p> MIGUEL COBAS </p>
+                        <h3 className="Media-title"> ¿POR QUÉ APRENDER REACT?</h3>
+                        <p className="Media-author"> MIGUEL COBAS </p>
                 </div>
             </div>
         )
