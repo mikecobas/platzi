@@ -4,12 +4,26 @@ import './media.css';
 
 
 class Media extends Component {
-    //constructor(props){
-    //    super(props)
-    //    this.handleClick = this.handleClick.bind(this);
-   // }
+
+    //Esta es la forma de ES6
+   /* constructor(props){
+        super(props)
+        this.state = {
+            author: props.author
+        }
+    
+    }*/
+    //Forma en ES7
+
+    state = {
+        author: 'Ricardo Celis'
+    }
+
     handleClick = (event) => {
-        console.log(this.props.title)
+        //console.log(this.props.title)
+        this.setState({
+            author: 'RICARDO CELIS'
+        })
     }
     render() {
        
@@ -23,7 +37,7 @@ class Media extends Component {
                         height={160}
                         />
                         <h3 className="Media-title">{ this.props.title }</h3>
-                        <p className="Media-author">{ this.props.author } </p>
+                        <p className="Media-author">{ this.state.author } </p>
                 </div>
             </div>
         )
