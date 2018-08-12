@@ -1,9 +1,9 @@
-import React, { Component } from 'react'; // al agregar { y el nombre } nos permite exportar mas preciso lo que necesitamos y ahorrar código 
+import React, { PureComponent } from 'react'; // al agregar { y el nombre } nos permite exportar mas preciso lo que necesitamos y ahorrar código 
 import PropTypes from 'prop-types';
 import './media.css';
 
 
-class Media extends Component {
+class Media extends PureComponent {
 
     //Esta es la forma de ES6
    /* constructor(props){
@@ -16,7 +16,7 @@ class Media extends Component {
     //Forma en ES7
 
     state = {
-        author: 'Ricardo Celis'
+        author: 'MIGUEL COBAS'
     }
 
     handleClick = (event) => {
@@ -31,13 +31,13 @@ class Media extends Component {
             <div className="Media" onClick={this.handleClick}>
                 <div className="Media-cover">
                     <img className="Media-image"
-                        src={ this.props.image }
+                        src={ this.props.cover }
                         alt=""
                         width={260}
                         height={160}
                         />
                         <h3 className="Media-title">{ this.props.title }</h3>
-                        <p className="Media-author">{ this.state.author } </p>
+                        <p className="Media-author">{ this.props.author } </p>
                 </div>
             </div>
         )
@@ -45,7 +45,7 @@ class Media extends Component {
 }
 
 Media.propTypes = {
-    image: PropTypes.string,
+    cover: PropTypes.string,
     title: PropTypes.string.isRequired,
     author: PropTypes.string,
 }
