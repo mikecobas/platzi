@@ -1,6 +1,18 @@
+.row{
+    margin-left:10px;
+}
 .Playlist {
     overflow: auto;
     white-space: nowrap;
     overflow-y: hidden;
     padding-bottom: 80px;
+}
+h2{
+    color:#333;
+    margin-bottom: 5px;
+}
+h3{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top:0;
 }
