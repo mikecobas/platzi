@@ -7,10 +7,10 @@ import data from '../api.json';
 //import Playlist from './src/playlist/componentes/playlist';
 
 //ReactDom.render(que voy a renderizar, donde lo hare);
-const container = document.getElementById('app');
+const homeContainer = document.getElementById('homeContainer');
 
 
 //const holaMundo = <h1>HOLA MUNDO!!</h1>;
 //console.log('Hola Mundo!')  
 
-render( <Home data={data} />, container);
+render( <Home data={data} />, homeContainer);

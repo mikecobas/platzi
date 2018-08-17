@@ -14,6 +14,7 @@ function Category(props) {
 
             <Playlist
                 playlist={props.playlist}
+                handleOpenModal ={props.handleOpenModal}
             />
         </div>
     )
