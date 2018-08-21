@@ -7,7 +7,6 @@ import Modal from '../../widgets/components/modal'
 import HandleError from '../../error/containers/handle-error'
 
 
-
 class Home extends Component {
     state = {
         modalVisible: false,
