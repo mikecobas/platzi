@@ -19,7 +19,7 @@ const Search = (props) => (
         className="Search-input"
         defaultValue='Platzi'
         onChange={props.handleChange }
-        value={props.value}
+       // value={props.value}
         />     
     </form>
 )
