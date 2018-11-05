@@ -1,5 +1,6 @@
 import React from 'react'
 import './play-pause.css'
+import './volumen.css'
 import Figure from '../../icons/components/figure'
 
 function PlayPause(props){
@@ -25,9 +26,7 @@ function PlayPause(props){
                 />
 
             </button>
-        }
-           
-           
+        }   
         </div>
     )
 }

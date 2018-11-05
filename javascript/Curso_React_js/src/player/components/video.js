@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './video.css'
 
+
 class Video extends Component {
 
     togglePlay(){
@@ -12,7 +13,7 @@ class Video extends Component {
         
 
     }
-
+ 
     componentWillReceiveProps(nextProps){
         if(nextProps.pause !== this.props.pause){
             this.togglePlay();
